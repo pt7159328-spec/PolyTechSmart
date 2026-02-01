@@ -21,21 +21,23 @@
     </div>
 </header>
 
+<!-- LANGUAGE SELECT (simple, temporary) -->
+<div style="text-align:center; margin-top:10px;">
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('hi')">हिंदी</button>
+</div>
+
 <!-- MAIN CONTENT -->
 <main class="main">
-    <h1>Technology Powered Learning Platform</h1>
+    <h1 data-lang="title"></h1>
 
-    <p>
-        PolyTechSmart ek modern educational platform hai jo  
-        <strong>Rajeev Gandhi Proudyogiki Vishwavidyalaya (RGPV)</strong>  
-        ke Polytechnic students ke liye specially design kiya gaya hai.  
-        Yahan aapko academic support, technical knowledge aur  
-        future-ready skills milti hain — ek hi jagah par.
+    <p data-lang="desc">
+        <!-- text JS se aayega -->
     </p>
 
     <div class="actions">
-        <a href="#" class="btn primary">Register</a>
-        <a href="#" class="btn secondary">Login</a>
+        <a href="#" class="btn primary" data-lang="register"></a>
+        <a href="#" class="btn secondary" data-lang="login"></a>
     </div>
 </main>
 
@@ -62,6 +64,9 @@
         © 2026 PolyTechSmart. All Rights Reserved.
     </div>
 </footer>
+
+<!-- LANGUAGE SCRIPT -->
+<script src="js/language.js"></script>
 
 </body>
 </html>
