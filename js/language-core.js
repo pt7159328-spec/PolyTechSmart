@@ -1,3 +1,7 @@
+// Set default language if not set
+if (!localStorage.getItem("pts_lang")) {
+    localStorage.setItem("pts_lang", "en");
+}
 
 // Get current language
 const currentLang = localStorage.getItem("pts_lang");
@@ -8,6 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const key = el.getAttribute("data-lang");
         if (translations[currentLang] && translations[currentLang][key]) {
             el.textContent = translations[currentLang][key];
+        }
+    });
+
+    // =========================
+    // ADDED: Placeholder support
+    // =========================
+    document.querySelectorAll("[data-lang-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-lang-placeholder");
+        if (translations[currentLang] && translations[currentLang][key]) {
+            el.placeholder = translations[currentLang][key];
         }
     });
 
