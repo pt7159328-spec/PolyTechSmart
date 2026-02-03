@@ -1,9 +1,9 @@
-.register-box {
+.login-box {
     display: flex;
     justify-content: center;
 }
 
-.register-form {
+.login-form {
     width: 100%;
     max-width: 380px;
     background: #ffffff;
@@ -12,7 +12,7 @@
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
-.register-form input {
+.login-form input {
     width: 100%;
     padding: 11px;
     margin-bottom: 14px;
@@ -21,13 +21,25 @@
     font-size: 14px;
 }
 
-.login-link {
+.forgot-password {
+    text-align: right;
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+
+.forgot-password a {
+    color: #0a3d62;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link {
     margin-top: 16px;
     font-size: 14px;
     text-align: center;
 }
 
-.login-link a {
+.register-link a {
     color: #0a3d62;
     text-decoration: none;
     font-weight: 600;
