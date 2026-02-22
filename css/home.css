@@ -1,0 +1,60 @@
+/* HOME MAIN */
+.home-main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.home-main h1 {
+    font-size: 34px;
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+.home-main p {
+    font-size: 17px;
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+/* ACTION CARDS */
+.home-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e3eaf2;
+    border-radius: 14px;
+    padding: 35px 25px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #0a3d62;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .home-main h1 {
+        font-size: 26px;
+    }
+}
